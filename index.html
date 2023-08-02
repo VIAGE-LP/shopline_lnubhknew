@@ -1,4 +1,41 @@
 <style>
+    .header--desktop .header__container {
+    position: fixed;
+    background-color: white;
+    left: 50%;
+    margin-left: -700px;
+    width: 1400px;
+    max-width: 100%;
+    min-height: 103px;
+    padding: 10px 20px 0;
+    display: flex;
+    }
+    @media screen and (max-width: 1400px) {
+        .header--desktop .header__container {
+            left: 0;
+            margin-left: 0;
+            margin: 0 auto;
+        }
+    }
+
+    .header--mobile .header__menu {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    #wrapper{
+    margin-top:103px;
+    }
+    @media screen and (max-width: 1200px) {
+        #wrapper{
+        margin-top:60px;
+    }
+    }
+
     .fv {
         width: 100%;
 
@@ -1198,7 +1235,7 @@
     $('a[href="#buy"]').click(function (e) {
         e.preventDefault();
         $('html , body').animate({
-            scrollTop: $('#buy').offset().top,
+            scrollTop: $('#buy').offset().top-100,
         }, 900);
     });
 
