@@ -1,15 +1,16 @@
 <style>
     .header--desktop .header__container {
-    position: fixed;
-    background-color: white;
-    left: 50%;
-    margin-left: -700px;
-    width: 1400px;
-    max-width: 100%;
-    min-height: 103px;
-    padding: 10px 20px 0;
-    display: flex;
+        position: fixed;
+        background-color: white;
+        left: 50%;
+        margin-left: -700px;
+        width: 1400px;
+        max-width: 100%;
+        min-height: 103px;
+        padding: 10px 20px 0;
+        display: flex;
     }
+
     @media screen and (max-width: 1400px) {
         .header--desktop .header__container {
             left: 0;
@@ -19,21 +20,32 @@
     }
 
     .header--mobile .header__menu {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    align-items: center;
-    justify-content: space-between;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    #wrapper{
-    margin-top:103px;
+    #wrapper {
+        margin-top: 103px;
     }
+
     @media screen and (max-width: 1200px) {
-        #wrapper{
-        margin-top:60px;
+        #wrapper {
+            margin-top: 60px;
+        }
     }
+
+    /* 隱藏電腦版商品資訊標籤 */
+    .quick-cart-body .variant-gallery-stage>a:last-child {
+        display: none;
+    }
+
+    /* 隱藏手機版商品資訊標籤 */
+    a.ng-binding{
+        display:none;
     }
 
     .fv {
@@ -311,10 +323,11 @@
 
                 <div class="video_box">
                     <img src="https://viage-lp.github.io/shopline_lnubhk/images/03.png" alt="">
-                    <video class="video01" src="https://viage-lp.github.io/shopline_lnubhk/video/video01.mov" loop autoplay
-                        muted playsinline>
+                    <video class="video01" src="https://viage-lp.github.io/shopline_lnubhk/video/video01.mov" loop
+                        autoplay muted playsinline>
                         <source src="https://viage-lp.github.io/shopline_lnubhk/video/video01.mov" type="video/mp4">
-                        <source src="https://viage-lp.github.io/shopline_lnubhk/video/video01.mov/video.ogg" type="video/ogg">
+                        <source src="https://viage-lp.github.io/shopline_lnubhk/video/video01.mov/video.ogg"
+                            type="video/ogg">
                     </video>
                 </div>
                 <img src="https://viage-lp.github.io/shopline_lnubhk/images/04.png" alt="">
@@ -323,103 +336,103 @@
                 <div class="color_box">
                     <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_title_1.png" alt="">
                     <div class="color_2btn trigger_01">
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn01_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn01_02.png" alt=""
-                          data-show="02">
-                      </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn01_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn01_02.png"
+                                alt="" data-show="02">
+                        </div>
                     </div>
                     <div class="show_01"></div>
-        
+
                     <div class="color_2btn trigger_02">
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn02_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn02_02.png" alt=""
-                          data-show="02">
-                      </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn02_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn02_02.png"
+                                alt="" data-show="02">
+                        </div>
                     </div>
                     <div class="show_02"></div>
-        
+
                     <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_title_02.png" alt="">
                     <div class="color_3btn trigger_03">
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_02.png" alt=""
-                          data-show="02">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_03.png" alt=""
-                          data-show="03">
-                      </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_02.png"
+                                alt="" data-show="02">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_03.png"
+                                alt="" data-show="03">
+                        </div>
                     </div>
                     <div class="show_03"></div>
-        
+
                     <div class="color_3btn trigger_04">
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_02.png" alt=""
-                          data-show="02">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_03.png" alt=""
-                          data-show="03">
-                      </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_02.png"
+                                alt="" data-show="02">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_03.png"
+                                alt="" data-show="03">
+                        </div>
                     </div>
                     <div class="show_04"></div>
-        
+
                     <div class="color_3btn trigger_05">
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_02.png" alt=""
-                          data-show="02">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_03.png" alt=""
-                          data-show="03">
-                      </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_02.png"
+                                alt="" data-show="02">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_03.png"
+                                alt="" data-show="03">
+                        </div>
                     </div>
                     <div class="show_05"></div>
-        
+
                     <div class="color_3btn trigger_06">
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_02.png" alt=""
-                          data-show="02">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_03.png" alt=""
-                          data-show="03">
-                      </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_02.png"
+                                alt="" data-show="02">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_03.png"
+                                alt="" data-show="03">
+                        </div>
                     </div>
                     <div class="show_06"></div>
-        
+
                     <div class="color_2btn trigger_07">
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn07_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn07_02.png" alt=""
-                          data-show="02">
-                      </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn07_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn07_02.png"
+                                alt="" data-show="02">
+                        </div>
                     </div>
                     <div class="show_07"></div>
                 </div>
@@ -429,9 +442,11 @@
 
                 <div id="shopline-section-1689138313108bcbb6b5" class="shopline-section ">
                     <style>
-                        div#shopline-section-1689138313108bcbb6b5:nth-last-child(1){
-                            display: none!important;
+                        /* 隱藏最後一個商品列表 */
+                        div#shopline-section-1689138313108bcbb6b5:nth-last-child(1) {
+                            display: none !important;
                         }
+
                         #product-list__products__1689138313108bcbb6b5 {
 
                             grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -467,30 +482,30 @@
                             }
                         }
                     </style>
+
                     <div class="section-width">
                         <div class="product-list-custom-padding__1689138313108bcbb6b5">
                             <div class="product-list__container">
-
-
                                 <h3 class="product-list__title" ng-non-bindable="">Category Title</h3>
-
                                 <div id="product-list__products__1689138313108bcbb6b5" class="product-list__products">
-
                                     <div class="product-list__product" product-id="648171c3ea93ed00118a5160">
-
                                         <div class="product-item">
                                             <product-item product-id="648171c3ea93ed00118a5160"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;648171c3ea93ed00118a5160&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣五入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;648171c3ea93ed00118a5160&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣五入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra"
+                                                    ng-click="sendGaProductClick(&quot;648171c3ea93ed00118a5160&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;648171c3ea93ed00118a5160&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a6431001b2bc6b3d19ccf8/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -498,11 +513,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣五入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -511,22 +527,27 @@
                                                 </a>
                                             </product-item>
                                         </div>
+
                                     </div>
 
                                     <div class="product-list__product" product-id="64a62b30f4d4970020bd9281">
                                         <div class="product-item">
                                             <product-item product-id="64a62b30f4d4970020bd9281"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1-1?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;64a62b30f4d4970020bd9281&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣四入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;64a62b30f4d4970020bd9281&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣四入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1-1"
+                                                    ng-click="sendGaProductClick(&quot;64a62b30f4d4970020bd9281&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;64a62b30f4d4970020bd9281&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a64324f435750014b3fbf1/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes ls-is-cached sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -534,11 +555,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣四入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -547,20 +569,26 @@
                                                 </a>
                                             </product-item>
                                         </div>
+
                                     </div>
                                     <div class="product-list__product" product-id="64a62b065fb4a70020b4c9a4">
                                         <div class="product-item">
                                             <product-item product-id="64a62b065fb4a70020b4c9a4"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;64a62b065fb4a70020b4c9a4&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣三入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;64a62b065fb4a70020b4c9a4&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣三入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1"
+                                                    ng-click="sendGaProductClick(&quot;64a62b065fb4a70020b4c9a4&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;64a62b065fb4a70020b4c9a4&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a6439ddad4fb27e5b37dfa/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -568,11 +596,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣三入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -581,20 +610,27 @@
                                                 </a>
                                             </product-item>
                                         </div>
+
                                     </div>
+
                                     <div class="product-list__product" product-id="64a62adb0d95b0001ab8460f">
                                         <div class="product-item">
                                             <product-item product-id="64a62adb0d95b0001ab8460f"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;64a62adb0d95b0001ab8460f&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣二入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;64a62adb0d95b0001ab8460f&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣二入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2"
+                                                    ng-click="sendGaProductClick(&quot;64a62adb0d95b0001ab8460f&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;64a62adb0d95b0001ab8460f&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a643a90c1b79001176116d/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -602,11 +638,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣二入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -620,22 +657,30 @@
                                         <div class="product-item">
                                             <product-item product-id="6482906c7cab230011bac1a1"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-1?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;6482906c7cab230011bac1a1&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣單入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;6482906c7cab230011bac1a1&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣單入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-1"
+                                                    ng-click="sendGaProductClick(&quot;6482906c7cab230011bac1a1&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;6482906c7cab230011bac1a1&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image multi-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a643b730b7170023b26c24/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
                                                         </div>
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image  second-image"
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media  second-image">
+                                                            <div class="boxify-image-wrap"> <img sizes="auto"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/900x.webp?source_format=png 900w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1080x.webp?source_format=png 1080w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1296x.webp?source_format=png 1296w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1512x.webp?source_format=png 1512w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/2160x.webp?source_format=png 2160w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/2960x.webp?source_format=png 2960w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/3260x.webp?source_format=png 3260w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/3860x.webp?source_format=png 3860w"
+                                                                    class="sl-lazy"> </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -643,11 +688,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣單入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -660,7 +706,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
                 <img src="https://viage-lp.github.io/shopline_lnubhk/images/08.png" alt="">
                 <img src="https://viage-lp.github.io/shopline_lnubhk/images/09.png" alt="">
@@ -668,26 +714,29 @@
                 <img src="https://viage-lp.github.io/shopline_lnubhk/images/11.png" alt="">
                 <div class="video_box">
                     <img src="https://viage-lp.github.io/shopline_lnubhk/images/12.png" alt="">
-                    <video class="video02" src="https://viage-lp.github.io/shopline_lnubhk/video/video02.mov" loop autoplay
-                        muted playsinline>
+                    <video class="video02" src="https://viage-lp.github.io/shopline_lnubhk/video/video02.mov" loop
+                        autoplay muted playsinline>
                         <source src="https://viage-lp.github.io/shopline_lnubhk/video/video02.mov" type="video/mp4">
-                        <source src="https://viage-lp.github.io/shopline_lnubhk/video/video02.mov/video.ogg" type="video/ogg">
+                        <source src="https://viage-lp.github.io/shopline_lnubhk/video/video02.mov/video.ogg"
+                            type="video/ogg">
                     </video>
                 </div>
                 <div class="video_box">
                     <img src="https://viage-lp.github.io/shopline_lnubhk/images/13.png" alt="">
-                    <video class="video03" src="https://viage-lp.github.io/shopline_lnubhk/video/video03.mov" loop autoplay
-                        muted playsinline>
+                    <video class="video03" src="https://viage-lp.github.io/shopline_lnubhk/video/video03.mov" loop
+                        autoplay muted playsinline>
                         <source src="https://viage-lp.github.io/shopline_lnubhk/video/video03.mov" type="video/mp4">
-                        <source src="https://viage-lp.github.io/shopline_lnubhk/video/video03.mov/video.ogg" type="video/ogg">
+                        <source src="https://viage-lp.github.io/shopline_lnubhk/video/video03.mov/video.ogg"
+                            type="video/ogg">
                     </video>
                 </div>
                 <div class="video_box">
                     <img src="https://viage-lp.github.io/shopline_lnubhk/images/14.png" alt="">
-                    <video class="video04" src="https://viage-lp.github.io/shopline_lnubhk/video/video04.mov" loop autoplay
-                        muted playsinline>
+                    <video class="video04" src="https://viage-lp.github.io/shopline_lnubhk/video/video04.mov" loop
+                        autoplay muted playsinline>
                         <source src="https://viage-lp.github.io/shopline_lnubhk/video/video04.mov" type="video/mp4">
-                        <source src="https://viage-lp.github.io/shopline_lnubhk/video/video04.mov/video.ogg" type="video/ogg">
+                        <source src="https://viage-lp.github.io/shopline_lnubhk/video/video04.mov/video.ogg"
+                            type="video/ogg">
                     </video>
                 </div>
                 <img src="https://viage-lp.github.io/shopline_lnubhk/images/15.png" alt="">
@@ -706,27 +755,26 @@
                     <div class="section-width">
                         <div class="product-list-custom-padding__1689138313108bcbb6b5">
                             <div class="product-list__container">
-
-
                                 <h3 class="product-list__title" ng-non-bindable="">Category Title</h3>
-
                                 <div id="product-list__products__1689138313108bcbb6b5" class="product-list__products">
-
                                     <div class="product-list__product" product-id="648171c3ea93ed00118a5160">
-
                                         <div class="product-item">
                                             <product-item product-id="648171c3ea93ed00118a5160"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;648171c3ea93ed00118a5160&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣五入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;648171c3ea93ed00118a5160&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣五入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra"
+                                                    ng-click="sendGaProductClick(&quot;648171c3ea93ed00118a5160&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;648171c3ea93ed00118a5160&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a6431001b2bc6b3d19ccf8/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -734,11 +782,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣五入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -747,22 +796,27 @@
                                                 </a>
                                             </product-item>
                                         </div>
+
                                     </div>
 
                                     <div class="product-list__product" product-id="64a62b30f4d4970020bd9281">
                                         <div class="product-item">
                                             <product-item product-id="64a62b30f4d4970020bd9281"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1-1?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;64a62b30f4d4970020bd9281&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣四入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;64a62b30f4d4970020bd9281&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣四入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1-1"
+                                                    ng-click="sendGaProductClick(&quot;64a62b30f4d4970020bd9281&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;64a62b30f4d4970020bd9281&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a64324f435750014b3fbf1/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes ls-is-cached sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -770,11 +824,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣四入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -783,20 +838,26 @@
                                                 </a>
                                             </product-item>
                                         </div>
+
                                     </div>
                                     <div class="product-list__product" product-id="64a62b065fb4a70020b4c9a4">
                                         <div class="product-item">
                                             <product-item product-id="64a62b065fb4a70020b4c9a4"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;64a62b065fb4a70020b4c9a4&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣三入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;64a62b065fb4a70020b4c9a4&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣三入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1"
+                                                    ng-click="sendGaProductClick(&quot;64a62b065fb4a70020b4c9a4&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;64a62b065fb4a70020b4c9a4&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a6439ddad4fb27e5b37dfa/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -804,11 +865,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣三入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -817,20 +879,27 @@
                                                 </a>
                                             </product-item>
                                         </div>
+
                                     </div>
+
                                     <div class="product-list__product" product-id="64a62adb0d95b0001ab8460f">
                                         <div class="product-item">
                                             <product-item product-id="64a62adb0d95b0001ab8460f"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;64a62adb0d95b0001ab8460f&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣二入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;64a62adb0d95b0001ab8460f&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣二入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2"
+                                                    ng-click="sendGaProductClick(&quot;64a62adb0d95b0001ab8460f&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;64a62adb0d95b0001ab8460f&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a643a90c1b79001176116d/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -838,11 +907,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣二入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -856,22 +926,30 @@
                                         <div class="product-item">
                                             <product-item product-id="6482906c7cab230011bac1a1"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-1?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;6482906c7cab230011bac1a1&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣單入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;6482906c7cab230011bac1a1&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣單入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-1"
+                                                    ng-click="sendGaProductClick(&quot;6482906c7cab230011bac1a1&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;6482906c7cab230011bac1a1&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image multi-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a643b730b7170023b26c24/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
                                                         </div>
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image  second-image"
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media  second-image">
+                                                            <div class="boxify-image-wrap"> <img sizes="auto"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/900x.webp?source_format=png 900w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1080x.webp?source_format=png 1080w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1296x.webp?source_format=png 1296w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1512x.webp?source_format=png 1512w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/2160x.webp?source_format=png 2160w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/2960x.webp?source_format=png 2960w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/3260x.webp?source_format=png 3260w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/3860x.webp?source_format=png 3860w"
+                                                                    class="sl-lazy"> </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -879,11 +957,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣單入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -901,108 +980,108 @@
                 <div class="color_box">
                     <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_title_1.png" alt="">
                     <div class="color_2btn trigger_01">
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn01_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn01_02.png" alt=""
-                          data-show="02">
-                      </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn01_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn01_02.png"
+                                alt="" data-show="02">
+                        </div>
                     </div>
                     <div class="show_01"></div>
-        
+
                     <div class="color_2btn trigger_02">
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn02_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn02_02.png" alt=""
-                          data-show="02">
-                      </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn02_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn02_02.png"
+                                alt="" data-show="02">
+                        </div>
                     </div>
                     <div class="show_02"></div>
-        
+
                     <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_title_02.png" alt="">
                     <div class="color_3btn trigger_03">
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_02.png" alt=""
-                          data-show="02">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_03.png" alt=""
-                          data-show="03">
-                      </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_02.png"
+                                alt="" data-show="02">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn03_03.png"
+                                alt="" data-show="03">
+                        </div>
                     </div>
                     <div class="show_03"></div>
-        
+
                     <div class="color_3btn trigger_04">
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_02.png" alt=""
-                          data-show="02">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_03.png" alt=""
-                          data-show="03">
-                      </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_02.png"
+                                alt="" data-show="02">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn04_03.png"
+                                alt="" data-show="03">
+                        </div>
                     </div>
                     <div class="show_04"></div>
-        
+
                     <div class="color_3btn trigger_05">
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_02.png" alt=""
-                          data-show="02">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_03.png" alt=""
-                          data-show="03">
-                      </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_02.png"
+                                alt="" data-show="02">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn05_03.png"
+                                alt="" data-show="03">
+                        </div>
                     </div>
                     <div class="show_05"></div>
-        
+
                     <div class="color_3btn trigger_06">
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_02.png" alt=""
-                          data-show="02">
-                      </div>
-                      <div class="col-4 p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_03.png" alt=""
-                          data-show="03">
-                      </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_02.png"
+                                alt="" data-show="02">
+                        </div>
+                        <div class="col-4 p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn06_03.png"
+                                alt="" data-show="03">
+                        </div>
                     </div>
                     <div class="show_06"></div>
-        
+
                     <div class="color_2btn trigger_07">
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn07_01.png" alt=""
-                          data-show="01">
-                      </div>
-                      <div class="col p-0">
-                        <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn07_02.png" alt=""
-                          data-show="02">
-                      </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn07_01.png"
+                                alt="" data-show="01">
+                        </div>
+                        <div class="col p-0">
+                            <img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/06_color_btn07_02.png"
+                                alt="" data-show="02">
+                        </div>
                     </div>
                     <div class="show_07"></div>
                 </div>
 
-                 <a id="buy"></a>
+                <a id="buy"></a>
                 <img src="https://viage-lp.github.io/shopline_lnubhk/images/19.png" alt="">
 
                 <div id="shopline-section-1689138313108bcbb6b5" class="shopline-section ">
@@ -1015,15 +1094,20 @@
                                         <div class="product-item">
                                             <product-item product-id="648171c3ea93ed00118a5160"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;648171c3ea93ed00118a5160&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣五入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;648171c3ea93ed00118a5160&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣五入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra"
+                                                    ng-click="sendGaProductClick(&quot;648171c3ea93ed00118a5160&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;648171c3ea93ed00118a5160&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;648171c376b9c90015acff8e\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a6431001b2bc6b3d19ccf8/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21aace60760013010142/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -1031,11 +1115,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣五入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -1044,22 +1129,27 @@
                                                 </a>
                                             </product-item>
                                         </div>
+
                                     </div>
 
                                     <div class="product-list__product" product-id="64a62b30f4d4970020bd9281">
                                         <div class="product-item">
                                             <product-item product-id="64a62b30f4d4970020bd9281"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1-1?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;64a62b30f4d4970020bd9281&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣四入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;64a62b30f4d4970020bd9281&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣四入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1-1"
+                                                    ng-click="sendGaProductClick(&quot;64a62b30f4d4970020bd9281&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;64a62b30f4d4970020bd9281&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b302f12e8001840ab01\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a64324f435750014b3fbf1/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes ls-is-cached sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb210f35430a0010d2cb65/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -1067,11 +1157,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣四入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -1080,20 +1171,26 @@
                                                 </a>
                                             </product-item>
                                         </div>
+
                                     </div>
                                     <div class="product-list__product" product-id="64a62b065fb4a70020b4c9a4">
                                         <div class="product-item">
                                             <product-item product-id="64a62b065fb4a70020b4c9a4"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;64a62b065fb4a70020b4c9a4&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣三入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;64a62b065fb4a70020b4c9a4&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣三入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2-1"
+                                                    ng-click="sendGaProductClick(&quot;64a62b065fb4a70020b4c9a4&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;64a62b065fb4a70020b4c9a4&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62b06aeed360018fb5f19\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a6439ddad4fb27e5b37dfa/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21660fc70200229f34ba/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -1101,11 +1198,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣三入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -1114,20 +1212,27 @@
                                                 </a>
                                             </product-item>
                                         </div>
+
                                     </div>
+
                                     <div class="product-list__product" product-id="64a62adb0d95b0001ab8460f">
                                         <div class="product-item">
                                             <product-item product-id="64a62adb0d95b0001ab8460f"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;64a62adb0d95b0001ab8460f&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣二入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;64a62adb0d95b0001ab8460f&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣二入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-2"
+                                                    ng-click="sendGaProductClick(&quot;64a62adb0d95b0001ab8460f&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;64a62adb0d95b0001ab8460f&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;64a62adaaeed36001efb5f09\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a643a90c1b79001176116d/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb21774d04cb001c7cd9f5/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -1135,11 +1240,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣二入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -1153,22 +1259,30 @@
                                         <div class="product-item">
                                             <product-item product-id="6482906c7cab230011bac1a1"
                                                 ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
-                                                class="ng-scope quick-cart-mobile">
-                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-1?draft=true&amp;debug=true"
-                                                    ng-click="sendGaProductClick(&quot;6482906c7cab230011bac1a1&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣單入組&quot;)"
-                                                    ga-product="{&quot;id&quot;:&quot;6482906c7cab230011bac1a1&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣單入組&quot;}"
+                                                class="ng-scope">
+                                                <a href="https://nextagetwbra.shoplineapp.com/products/luna-bra-1"
+                                                    ng-click="sendGaProductClick(&quot;6482906c7cab230011bac1a1&quot;, &quot;&quot;, [&quot;{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]&amp;#125;&amp;#125;&quot;], &quot;LUNA美媞晚安內衣&quot;)"
+                                                    ga-product="{&quot;id&quot;:&quot;6482906c7cab230011bac1a1&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variations&quot;:&quot;[{\&quot;key\&quot;:\&quot;6482906c271b730010e17931\&quot;,\&quot;sku\&quot;:\&quot;4560449970518\&quot;,\&quot;fields_translations\&quot;:{\&quot;en\&quot;:[\&quot;\&quot;,\&quot;\&quot;],\&quot;zh-hant\&quot;:[\&quot;經典黑\&quot;,\&quot;S\&quot;]}}]&quot;,&quot;title&quot;:&quot;LUNA美媞晚安內衣&quot;}"
                                                     class="quick-cart-item js-quick-cart-item    ng-isolate-scope">
                                                     <div class="boxify-image-wrapper js-quick-boxify-image multi-image">
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image "
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a643b730b7170023b26c24/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media ">
+                                                            <div class="boxify-image-wrap"> <img sizes="578px"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/900x.webp?source_format=png 900w"
+                                                                    class="lazyautosizes sl-lazyloaded"
+                                                                    srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64cb218f0941990019d0315a/900x.webp?source_format=png 900w">
+                                                            </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
                                                         </div>
-                                                        <div class="boxify-image js-boxify-image center-contain sl-lazy-image  second-image"
-                                                            style="background-image:url(https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1400x.webp?source_format=png)"
-                                                            data-size="1400x">
+                                                        <div
+                                                            class="boxify-image js-boxify-image center-contain sl-media  second-image">
+                                                            <div class="boxify-image-wrap"> <img sizes="auto"
+                                                                    alt="LUNA美媞晚安內衣"
+                                                                    data-srcset="https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/375x.webp?source_format=png 375w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/540x.webp?source_format=png 540w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/720x.webp?source_format=png 720w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/900x.webp?source_format=png 900w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1080x.webp?source_format=png 1080w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1296x.webp?source_format=png 1296w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/1512x.webp?source_format=png 1512w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/2160x.webp?source_format=png 2160w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/2960x.webp?source_format=png 2960w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/3260x.webp?source_format=png 3260w, https://shoplineimg.com/63c901da2b5a6d00ef93650b/64a66a50a020b500170ec98d/3860x.webp?source_format=png 3860w"
+                                                                    class="sl-lazy"> </div>
                                                             <div
                                                                 class="btn-add-to-cart js-btn-add-to-cart hidden-xs hidden-sm">
                                                                 加入購物車</div>
@@ -1176,11 +1290,12 @@
                                                     </div>
                                                     <div class="info-box">
                                                         <div class="info-box-inner-wrapper">
-                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣單入組</div>
+                                                            <div class="title text-primary-color   ">LUNA美媞晚安內衣</div>
                                                             <div class="quick-cart-price   ">
-                                                                <div
-                                                                    class="                    global-primary dark-primary price sl-price                                                            ">
-                                                                    NT$1,390 </div>
+                                                                <div class="                    global-primary dark-primary price sl-price                                                            "
+                                                                    data-currency-twd="NT$1,390"
+                                                                    data-currency-hkd="HK$342.68" data-currency="HKD">
+                                                                    HK$342.68</div>
                                                             </div> <span
                                                                 class="btn-add-to-cart js-btn-add-to-cart mobile-cart visible-xs visible-sm                    ">
                                                                 <i class="fa fa-shopping-cart"></i> </span>
@@ -1212,7 +1327,7 @@
                 </a>
             </div>
         </section>
-       
+
         <!-- ▲自由編集箇所▲ -->
     </div>
 </div>
@@ -1231,11 +1346,19 @@
         return;
     });
 
+    // 提示購物車按鈕電腦版/手機版
+    var width = $(window).width();
+    if (width <= 1000) {
+        $("div.title.text-primary-color").text("▼點擊加入購物車▼");
+    } else {
+        $("div.title.text-primary-color").text("▲點擊加入購物車▲");
+    }
+
     // 立即訂購btn動態
     $('a[href="#buy"]').click(function (e) {
         e.preventDefault();
         $('html , body').animate({
-            scrollTop: $('#buy').offset().top-100,
+            scrollTop: $('#buy').offset().top - 100,
         }, 900);
     });
 
@@ -1255,39 +1378,39 @@
     $('#lastday').text(`${month}/${day}`);
 
     //color區塊互動
-    $(".trigger_01 img").click(function (e) { 
+    $(".trigger_01 img").click(function (e) {
         e.preventDefault();
-        var dataset=$(this).data("show")
+        var dataset = $(this).data("show")
         $(".show_01").html(`<img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/show/01_${dataset}.png" alt="">`)
     });
-    $(".trigger_02 img").click(function (e) { 
+    $(".trigger_02 img").click(function (e) {
         e.preventDefault();
-        var dataset=$(this).data("show")
+        var dataset = $(this).data("show")
         $(".show_02").html(`<img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/show/02_${dataset}.png" alt="">`)
     });
-    $(".trigger_03 img").click(function (e) { 
+    $(".trigger_03 img").click(function (e) {
         e.preventDefault();
-        var dataset=$(this).data("show")
+        var dataset = $(this).data("show")
         $(".show_03").html(`<img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/show/03_${dataset}.png" alt="">`)
     });
-    $(".trigger_04 img").click(function (e) { 
+    $(".trigger_04 img").click(function (e) {
         e.preventDefault();
-        var dataset=$(this).data("show")
+        var dataset = $(this).data("show")
         $(".show_04").html(`<img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/show/04_${dataset}.png" alt="">`)
     });
-    $(".trigger_05 img").click(function (e) { 
+    $(".trigger_05 img").click(function (e) {
         e.preventDefault();
-        var dataset=$(this).data("show")
+        var dataset = $(this).data("show")
         $(".show_05").html(`<img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/show/05_${dataset}.png" alt="">`)
     });
-    $(".trigger_06 img").click(function (e) { 
+    $(".trigger_06 img").click(function (e) {
         e.preventDefault();
-        var dataset=$(this).data("show")
+        var dataset = $(this).data("show")
         $(".show_06").html(`<img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/show/06_${dataset}.png" alt="">`)
     });
-    $(".trigger_07 img").click(function (e) { 
+    $(".trigger_07 img").click(function (e) {
         e.preventDefault();
-        var dataset=$(this).data("show")
+        var dataset = $(this).data("show")
         $(".show_07").html(`<img src="https://viage-lp.github.io/shopline_lnubhk/images/06_color/show/07_${dataset}.png" alt="">`)
     });
 </script>
